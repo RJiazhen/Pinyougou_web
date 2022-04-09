@@ -1,0 +1,137 @@
+/* 声明字体文件 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* #region 秒杀导航栏start */
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    top: 35px;
+    left: 170px;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid #df1010;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    /* 这里之所以line-height设置得比sk_list的要高，是为了底部对齐 */
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: "\e91e";
+    font-family: "icomoon";
+}
+
+/* #endregion 秒杀导航栏end */
+
+/* #region 秒杀列表页主体部分 */
+.sk_bd ul li {
+    width: 289px;
+    height: 460px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    /* 之所以设置一个透明的边框是为了保证鼠标悬浮时的红色边框出现不会导致图片抖动 */
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
+
+.sk_bd ul li a img {
+    display: inline;
+    text-align: center;
+    object-fit: contain;
+}
+
+.describe {
+    margin: 0 12px;
+}
+
+.sk_bd ul li h5 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.price {
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.price del {
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+.price i {
+    font-size: 22px;
+}
+
+.remain {
+    margin-top: 10px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.remain img {
+    display: inline;
+    text-align: center;
+}
+
+.buy{
+    position: relative;
+    height: 51px;
+    background-color: #c81523;
+}
+
+.buy a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -40px;
+    font-size: 20px;
+    color: #fff;
+}
+/* #endregion  */
