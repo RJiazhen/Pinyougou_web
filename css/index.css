@@ -6,9 +6,82 @@
 }
 
 .focus {
+    overflow: hidden;
+    position: absolute;
     float: left;
     width: 721px;
     height: 455px;
+}
+
+.focus .arrow-l {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: #f9f9f9;
+    background-color: rgba(104, 100, 100, 0.473);
+    border-radius: 0 15px 15px 0;
+    z-index: 999;
+}
+
+.focus .arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 696px;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: #f9f9f9;
+    background-color: rgba(104, 100, 100, 0.473);
+    border-radius: 15px 0 0 15px;
+    z-index: 999;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3605px;
+}
+
+.focus ul li {
+    float: left;
+    width: 721px;
+}
+
+.focus ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.focus .circle {
+    position: absolute;
+    bottom: 20px;
+    left: 360px;
+    transform: translateX(-50%);
+
+}
+
+.focus .circle li {
+    float: left;
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(187, 182, 185, 0.726);
+    border-radius: 50%;
+}
+
+.focus .circle .current {
+    background-color: #f9f9f9;
 }
 
 .newflash {
@@ -136,7 +209,7 @@
 /* 推荐模块end */
 
 /* 楼层模块start */
-.floor .w{
+.floor .w {
     margin-top: 30px;
 }
 
@@ -165,26 +238,30 @@
     margin: 0 15px;
 }
 
-.box_bd{
+.box_bd {
     height: 361px;
 }
-.tab_list_item{
+
+.tab_list_item {
     position: relative;
 }
-.tab_list_item>div{
+
+.tab_list_item>div {
     float: left;
 }
 
-.col_210{
+.col_210 {
     width: 210px;
     height: 361px;
     text-align: center;
     background-color: #f9f9f9;
 }
-.col_210 ul{
+
+.col_210 ul {
     padding-left: 12px;
 }
-.col_210 ul li{
+
+.col_210 ul li {
     float: left;
     width: 85px;
     height: 34px;
@@ -193,27 +270,29 @@
     text-align: center;
     line-height: 34px;
 }
-.col_210 a img{
+
+.col_210 a img {
     float: left;
 }
-.col_329{
+
+.col_329 {
     width: 329px;
     text-align: center;
 }
 
-.col_221{
+.col_221 {
     width: 221px;
     border-right: 1px solid #ccc;
 
 }
 
-.col_219{
+.col_219 {
     position: absolute;
     right: 0px;
-    top:0px;
+    top: 0px;
 }
 
-.col_219 a img{
+.col_219 a img {
     display: block;
 }
 
